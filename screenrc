@@ -1,0 +1,7 @@
+vbell off
+autodetach on
+startup_message off
+pow_detach_msg "Screen session of \$LOGNAME \$:cr:\$:nl:ended."
+defscrollback 5000
+
+term vte-256color

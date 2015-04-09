@@ -1,0 +1,31 @@
+#!/bin/bash
+
+if [[ $PS1 && -f /usr/share/git/git-prompt.sh ]]; then
+  source /usr/share/git/completion/git-completion.bash
+  source /usr/share/git/git-prompt.sh
+
+  export GIT_PS1_SHOWDIRTYSTATE=1
+  export GIT_PS1_SHOWSTASHSTATE=1
+  export GIT_PS1_SHOWUNTRACKEDFILES=0
+fi
+
+function get_pcol() {
+  [[ $UID == 0 ]] && echo $RB || echo $GB
+}
+
+function get_git() {
+  echo "\$([[ \$(__git_ps1) ]] && echo \"$W\342\224\200[$MB\356\202\240 \$(__git_ps1 \"%s\")$W]\")"
+}
+
+function get_err() {
+  echo "\$(if [[ \$? == 0 ]]; then echo \"\[\e[01;32m\]\342\234\223\"; else echo \"\[\e[01;37m\]\$? \[\e[01;31m\]\342\234\227\"; fi)"
+}
+
+function get_upt() {
+  uptime -p | cut -d ' ' -f 2,4 | sed -nuE 's/([0-9]+)[[:space:]]+([0-9]+)/\1h \2m/p'
+}
+
+function get_path() {
+  dirs=(${1//\// })
+  echo ${dirs[@]}
+}

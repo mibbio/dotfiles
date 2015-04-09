@@ -1,0 +1,15 @@
+[dotfiles]
+repository = /path/to/dotfiles-repository
+ignore = [
+	'.git',
+	'.gitignore',
+	'.gitattributes',
+	'symlink.sh',
+	'README.md',
+	'dotfilesrc.sample']
+packages = [
+	'config',
+	'textadept',
+	'irssi',
+	'gnupg',
+	'i3']

@@ -1,0 +1,4 @@
+# .gitattributes
+config/Trolltech.conf filter=qt
+irssi/config filter=irssi
+
