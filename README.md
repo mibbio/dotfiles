@@ -16,8 +16,8 @@
 
 **some bash aliases/function need extra applications**
 
-|alias/function|application|
-|:-------------|:----------|
+|alias / function|application|
+|:---------------|:----------|
 |```irc```|```screen``` ```irssi```|
 |```colortable```|```xfce4-terminal```|
 |```diff```|```colordiff```|
