@@ -6,18 +6,18 @@
 ***
 
 **usage**
-* files are prepared to use with this [dotfiles management tool](https://pypi.python-org/pypi/dotfiles/)
+* files are prepared for this [dotfiles management tool](https://github.com/jbernard/dotfiles)
 * clone repo to any directory you want
 * copy `dotfilesrc.sample` to `~/.dotfilesrc`
 * modify path for `repository` in `~/dotfilesrc` to base path of local repo
-* run `dotfiles -s [-f]` in users home to sync files (`-f` overwrites exisiting files)
+* run `dotfiles -s [-f]` in users home to sync files (-f overwrites exisiting files)
 
 ***
 
 **some bash aliases/function need extra applications**
 
-|alias|application|
-|:----|:----------|
+|alias/function|application|
+|:-------------|:----------|
 |```irc```|```screen``` ```irssi```|
 |```colortable```|```xfce4-terminal```|
 |```diff```|```colordiff```|
